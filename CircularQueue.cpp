@@ -71,6 +71,7 @@ void remove()
         val=cq[front];
         front++;
     }
+    cout<<val<<" removed\n";
 }
 void display()
 {
