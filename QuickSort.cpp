@@ -31,8 +31,19 @@ int part(int arr[],int low,int high)
             int temp = arr[s];
             arr[s] = arr[e];
             arr[e] = temp;
-            s++;
-            e--;
+            if(pi==e)
+            {
+                s++;
+            }
+            else if(pi==s)
+            {
+                e--;
+            }
+            else
+            {
+                s++;
+                e--;
+            }
         }
     }
     return pi;
