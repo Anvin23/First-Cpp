@@ -2,7 +2,6 @@
 using namespace std;
 class Human
 {
-    char* name;
     public : 
     int lifespan = 80;
     virtual void run()
@@ -12,6 +11,7 @@ class Human
 };
 class Man : public Human
 {
+    char* name;
     public : 
     void  run()
     {
@@ -23,7 +23,13 @@ int main()
 {
     Human *h = new Man();
     h->run();
-    cout<<h->lifespan;
+    cout<<h->lifespan<<endl;
+
+    Human h1;
+    h1.run();
+
+    Man m;
+    m.run();
 
 
     return 0;
