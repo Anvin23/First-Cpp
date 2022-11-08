@@ -24,3 +24,6 @@ QuickSort.exe
 class.exe
 BinaryTree.exe
 SparceMatrix.exe
+InsertionSort.exe
+SelectionSort.exe
+MergeSort.exe
