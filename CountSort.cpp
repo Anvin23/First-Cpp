@@ -23,6 +23,18 @@ int max(int* a,int n)
     return m;
 }
 
+// in count sort we make a new array of max index >= the largest element in the provided array
+// all elements in the new array is initialised by 0
+// iterate through the providede array
+// for each element we increment the value in new array of at index [element]
+// if we come across 3 during traversing , we increment the value at newarray[3]
+// this indicates the no. of times a particular element was encountered
+// after traversal , we traverse through the new array from beginning
+// if value is not 0 , add the 'index' in the provided array as mantimes as its value
+// ie; if index 3 has value 2 it means 3 appeared twice in the original array
+// so add 3 two times in the array , then move forward
+// since we do this from index 0 to maxlen , we will be adding elements in sorted order 
+
 void countSort(int *a,int n)
 {
     int m = max(a,n);
