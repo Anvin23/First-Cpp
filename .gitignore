@@ -28,3 +28,5 @@ InsertionSort.exe
 SelectionSort.exe
 MergeSort.exe
 CountSort.exe
+DoubleStack.exe
+ThreadBasicDemo.exe
