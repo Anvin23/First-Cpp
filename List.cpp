@@ -16,7 +16,10 @@ void display(list<int> &ls)
 
 int main()
 {
-    list<int> ls;
+    list<int> ls;  // creating an empty vector
+
+    // list<int> ls(6); creating a length 6 vector
+
     ls.push_back(24);
     ls.push_back(8);
     ls.push_back(137);
