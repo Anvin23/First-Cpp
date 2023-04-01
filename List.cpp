@@ -34,12 +34,15 @@ int main()
     // removes an element from the back
     ls.pop_front();
     // removes an element from the front
-
+    
     display(ls);
 
     ls.remove(24);
     // removes the given value from the list
+    display(ls);
 
+    ls.sort();
+    // sorts the given list
     display(ls);
 
     return 0;
