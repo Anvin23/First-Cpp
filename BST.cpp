@@ -43,6 +43,13 @@ class BST {
         return node;
     }
 
+    int height(Node* node) {
+            if(node == nullptr) {
+                return -1;
+            }
+            return node->height;
+        }
+
     bool balanced(Node* node) {
         if(node == nullptr) {
             return true;
@@ -75,11 +82,8 @@ class BST {
             root = insert(val, root);
         }
 
-        int height(Node* node) {
-            if(node == nullptr) {
-                return -1;
-            }
-            return node->height;
+        int height() {
+            return height(root);
         }
 
         bool isEmpty() {
@@ -102,6 +106,8 @@ int main() {
 
     tree->inOrder();
     cout<<endl;
+
+    cout<<"The height of the tree is "<<tree->height()<<endl;
 
     if(tree->balanced()) {
         cout<<"The tree is balanced\n";
