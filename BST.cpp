@@ -19,12 +19,7 @@ class BST {
             height = 0;
         }
 
-        int getValue() {
-            return value;
-        }
-
         friend class BST;
-
     };
 
     Node *root = nullptr;
@@ -114,4 +109,6 @@ int main() {
     else {
         cout<<"The tree is unbalanced\n";
     }
+
+    return 0;
 }
